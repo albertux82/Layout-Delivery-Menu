@@ -42,7 +42,7 @@ p {
   bottom: 10px;
   width: 90%;
   max-width: 660px;
-  min-width: 460px;
+  /* min-width: 460px; */
   border-radius: 4px;
 }
 
