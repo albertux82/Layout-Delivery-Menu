@@ -40,7 +40,7 @@ p {
   padding: 10px 20px;
   position: relative;
   bottom: 10px;
-  width: 90%;
+  /* width: 90%; */
   max-width: 660px;
   /* min-width: 460px; */
   border-radius: 4px;
