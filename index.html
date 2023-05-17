@@ -1,12 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="styles.css" rel="stylesheet" />
+
 </head>
+
 <body>
-    <h1>Hola</h1>
+
+    <div class="container-fluid">
+
+        <div class="row shadow mb-3">
+            <div class="store-header"
+                style=" background-image: url(https://images.rappi.com.mx/restaurants_background/freshspot-1661528010975-1677081177844.jpg?e=webp&d=200x200&q=50); ">
+                <div class="store-info shadow">
+                    <h2 class="fw-semi-bold m-0">Fresh Spot - San Ramón Nte</h2>
+                    <p class="p-0">Calle 43 339 San Ramón Nte 97117 Mérida Yuc.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 products-sidebar">
+                <div class="pt-3">
+
+                    <!-- <h5>Categorías</h5> -->
+                    <ul class="list-group list-group-flush myScroll">
+                        <li class="list-group-item"><a href="#0" class="nav-link">Categoría 0 </a></li>
+                        <li class="list-group-item"><a href="#1" class="nav-link">Categoría 1</a></li>
+                        <li class="list-group-item"><a href="#2" class="nav-link">Categoría 2</a></li>
+                        <li class="list-group-item"><a href="#3" class="nav-link">Categoría 3</a></li>
+                        <li class="list-group-item"><a href="#4" class="nav-link">Categoría 4</a></li>
+                        <li class="list-group-item"><a href="#5" class="nav-link">Categoría 5</a></li>
+                        <li class="list-group-item"><a href="#6" class="nav-link">Categoría 6</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="products-grid mt-3">
+
+                    <!-- Categoría -->
+                    <div class="category-container">
+
+                        <h3 id="0" class="category-title">Categoría 0</h3>
+
+                        <div class="products-container">
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Categoría -->
+                    <div class="category-container">
+
+                        <h3 id="1" class="category-title">Categoría 1</h3>
+
+                        <div class="products-container">
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Categoría -->
+                    <div class="category-container">
+
+                        <h3 id="2" class="category-title">Categoría 2</h3>
+
+                        <div class="products-container">
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Categoría -->
+                    <div class="category-container">
+
+                        <h3 id="3" class="category-title">Categoría 3</h3>
+
+                        <div class="products-container">
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                            <!-- Producto -->
+                            <div class="product" data-id="@x">
+                                <div class="product-info">
+                                    <span class="badge bg-warning">Popular</span>
+                                    <h2 class="title fw-bold">Wrap Búfalo @x</h2>
+                                    <p class="description">Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria,
+                                        huevo duro, crutones y aderezo spice ranch</p>
+                                    <p class="price">$125.00</p>
+                                    <button class="btn btn-xs btn-outline-warning">Agregar</button>
+                                </div>
+                                <div class="product-image"
+                                    style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Modal Product Detail -->
+    <div class="modal fade" id="modal_previewDetail" tabindex="-1" aria-labelledby="modalPreviewDetail"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa fa-edit me-2 text-primary"></i>Product <span id="pId"></span>
+                    </h4>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" title="Close"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body myScroll">
+
+                    <div class="row product-detail">
+                        <div class="col-12 col-xl-6">
+                            <!-- <div style="position: sticky; top: 0px;">
+                                <img src="https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85"
+                                    class="img-fluid" />
+                            </div> -->
+                            <div class="product-image"
+                                style="background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85); ">
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+
+                            <div>
+                                <h2>Product</h2>
+                                <h3>$120.00</h3>
+                                <p><a href="#" class="tooltip-test" title="Tooltip">This link</a></p>
+                                <p>Wrap con lechuga, pollo búfalo, queso parmesano, zanahoria, huevo duro, crutones y
+                                    aderezo spice ranch.</p>
+                            </div>
+
+                            <div id="cart_items">
+
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Subheading</div>
+                                            Cras justo odio
+                                        </div>
+                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                    </li>
+
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Subheading</div>
+                                            Cras justo odio
+                                        </div>
+
+                                        <!-- Acciones -->
+                                        <div class="actions d-none">
+                                            <button class="btn btn-sm btn-outline-light-danger btnRemove" data-id="1"
+                                                data-btn-action><i class="fa fa-minus"></i></button>
+                                            <span class="quantity">4</span>
+                                            <button class="btn btn-sm btn-outline-light-success btnAdd" data-id="1"
+                                                data-btn-action><i class="fa fa-plus"></i></button>
+                                        </div>
+                                        <i class="fa fa-plus-circle fa-2x text-success icon-plus"></i>
+
+                                    </li>
+
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Subheading</div>
+                                            Cras justo odio
+                                        </div>
+
+                                        <i class="fa fa-plus-circle fa-2x text-success icon-plus"></i>
+                                        <!-- Acciones -->
+                                        <div class="actions d-none">
+                                            <button class="btn btn-sm btn-outline-light-danger btnRemove" data-id="2"
+                                                data-btn-action><i class="fa fa-minus"></i></button>
+                                            <span class="quantity">5</span>
+                                            <button class="btn btn-sm btn-outline-light-success btnAdd" data-id="2"
+                                                data-btn-action><i class="fa fa-plus"></i></button>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Subheading</div>
+                                            Cras justo odio
+                                        </div>
+                                        <span class="badge bg-primary rounded-pill">14</span>
+                                    </li>
+                                </ul>
+
+                                <hr />
+
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Subheading</div>
+                                            Cras justo odio
+                                        </div>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Subheading</div>
+                                            Cras justo odio
+                                        </div>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Subheading</div>
+                                            Cras justo odio
+                                        </div>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3">
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="modal-footer justify-content-end">
+
+
+                    <!-- <button type="button" class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"></i>Close</button> -->
+                    <div class="actions">
+                        <button class="btn btn-sm btn-outline-light-danger btnRemove" data-btn-actiontotal>
+                            <i class="fa fa-minus"></i></button>
+                        <span class="quantity">1</span>
+                        <button class="btn btn-sm btn-outline-light-success btnAdd" data-btn-actiontotal>
+                            <i class="fa fa-plus"></i></button>
+                    </div>
+                    <button class="btn btn-primary" title="Add">Add $120.00</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <button onclick="topFunction()" id="btnTop" data-bs-toggle="tooltip" data-placement="top" title="@Resource.GoToTop"
+        class="btn btn-secondary btn-sm">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts.js"></script>
 </body>
+
 </html>

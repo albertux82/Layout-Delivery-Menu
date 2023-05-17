@@ -1,0 +1,259 @@
+:root {
+  --primary: #ffaa46;
+  --success: #19cb98;
+}
+
+body {
+  background: #f1f1f1;
+}
+p {
+  margin: 0px;
+}
+
+.btn-outline-warning {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-warning:hover {
+  color: white;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+/*Store Header*/
+.store-header {
+  /*    background-image: url(https://images.rappi.com.mx/restaurants_background/freshspot-1661528010975-1677081177844.jpg?e=webp&d=200x200&q=50);
+*/
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.store-info {
+  background: hsl(0deg 0% 100% / 90%);
+  padding: 10px 20px;
+  position: relative;
+  bottom: 10px;
+  width: 90%;
+  max-width: 660px;
+  min-width: 460px;
+  border-radius: 4px;
+}
+
+.form-check-input {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.form-check-input:checked {
+  background-color: var(--success);
+  border-color: var(--success);
+}
+
+/*Category Container*/
+.category-container {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e9e7ed;
+  padding-bottom: 20px;
+}
+
+.category-container .category-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/*Pruducts Container*/
+.products-container {
+  display: grid;
+  /*grid-template-columns: repeat(auto-fill, 360px);*/
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 16px;
+  place-content: space-around;
+  width: 100%;
+}
+
+.products-sidebar {
+  padding-left: 20px !important;
+  background: white;
+  border-radius: 4px;
+}
+
+.products-sidebar ul li {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.products-sidebar ul li a {
+  color: black;
+}
+
+.products-sidebar ul li a:hover {
+  color: var(--primary);
+}
+
+.product {
+  display: flex;
+  background: white;
+  border-radius: 4px;
+  padding: 8px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.product:hover {
+  transform: scale(1.02);
+  transition: 0.5s ease;
+  box-shadow: 4px 4px 4px #beb9d04d;
+}
+
+.product .product-image {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid var(--primary);
+  /*background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  background-position: center;
+}
+
+/*   .product img {
+        width: 100px;
+        height:100px;
+        border-radius: 4px
+    }*/
+
+.product .title {
+  font-size: 16px;
+}
+
+.product .description {
+  font-size: 12px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+
+.product .price {
+  font-weight: 600;
+}
+
+.product-detail .product-image {
+  /*background-image: url(https://images.rappi.com.mx/products/977751273-1593838063395.png?e=webp&d=511x511&q=85);*/
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border: 1px solid var(--primary);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  background-position: center;
+  position: sticky;
+  top: 0px;
+}
+
+.myScroll {
+  overflow: auto;
+}
+
+.myScroll::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.myScroll::-webkit-scrollbar:vertical {
+  width: 8px;
+}
+
+.myScroll::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+.myScroll::-webkit-scrollbar-thumb {
+  border-radius: 15px 15px 15px 15px;
+  border: 1px solid rgb(58 39 127 / 43%); /* should match background, can't be transparent */
+  background-color: rgb(58 39 127 / 43%);
+}
+
+#btnTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  transition: 0.3s ease;
+}
+
+/** Sidebar Sticky on Scroll*/
+.sidebar {
+  position: fixed;
+  top: 0; /* rtl:raw:right: 0;*/
+  bottom: 0; /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+.sidebar-off {
+  transition: 0.5s ease;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /*Scrollable contents if viewport is shorter than content.*/
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: block;
+  }
+
+  .sidebar {
+    /* top: -2.5rem; */
+    /*position: static !important;*/
+    padding: 0px !important;
+    height: 55px;
+  }
+
+  .products-sidebar {
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .products-sidebar ul {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    flex-direction: row;
+  }
+
+  .products-sidebar ul li {
+    background: #f5f4f8;
+    display: inline;
+    padding: 0px 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin: 0px 2px;
+  }
+
+  .product {
+    width: 100%;
+    padding: 8px;
+  }
+}
